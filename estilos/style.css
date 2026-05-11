@@ -29,13 +29,22 @@ body {
     
 }
 header {
-  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--destaque);
+  height: 80px;
+  z-index: 1000;
+  
+  
   color: var(--texto);
-  padding: 10px;
+  padding-bottom:10px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  align-items: center;
+
 }
 nav#menu ul {
   display: flex;
@@ -58,7 +67,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 section#ficha {
   background-color: var(--fundo-card);
@@ -76,6 +85,7 @@ section#ficha img.foto {
   display: block;
   margin: auto;
   margin-bottom: 15px;
+  
 }
 section#ficha h1 {
   color: var(--destaque);
@@ -132,3 +142,39 @@ article h2 {
   height: 100%;
   border-radius: 11px;
 }
+#skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+.percent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+.barra {
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+.progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+  
