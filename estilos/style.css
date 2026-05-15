@@ -29,13 +29,13 @@ body {
     
 }
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--destaque);
   height: 80px;
-  z-index: 1000;
+  z-index: 1;
   
   
   color: var(--texto);
@@ -249,12 +249,8 @@ footer  a:hover {
     justify-content: space-between;
 
   }
-  #projeto-container .projeto a {
-    
-    padding-bottom: auto;
-    margin: auto;
-
-    
+  .projeto a {
+  
     color: var(--destaque);
     
   }
