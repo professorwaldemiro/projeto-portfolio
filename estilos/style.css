@@ -77,6 +77,7 @@ section#ficha {
 }
 section#ficha img.foto {
   width: 200px;
+  object-fit: contain;
   aspect-ratio: 1/1;  
   overflow: hidden;
   border-radius: 50%;
@@ -247,6 +248,15 @@ footer  a:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
 
+  }
+  #projeto-container .projeto a {
+    
+    padding-bottom: auto;
+    margin: auto;
+
+    
+    color: var(--destaque);
+    
   }
 
 #projeto-container .projeto-info {
