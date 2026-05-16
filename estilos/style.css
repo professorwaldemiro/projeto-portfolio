@@ -242,8 +242,7 @@ footer  a:hover {
   #skills-container {
     grid-template-columns: 1fr 1fr;
   }
- 
- 
+  
   #projeto-container .projeto { 
     flex-direction: row-reverse;
     justify-content: space-between;
