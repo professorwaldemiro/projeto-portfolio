@@ -25,9 +25,20 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
-  color: var(--texto); 
+  color: var(--texto);
+  transition: back-groundcolor 2s, color 2s; 
     
 }
+
+.escuro {
+   --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso:#a73917;
+  --fundo-card: #444444;
+}
+
 header {
   position: sticky;
   top: 0;
